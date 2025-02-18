@@ -25,7 +25,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <header className="bg-amber-100 p-4 text-center">
+          <h1>Welcome to next js v15</h1>
+        </header>
+        <main className="bg-slate-50 py-8 px-4">{children}</main>
+        <footer className="bg-blue-500 p-4 text-center text-white font-bold capitalize">
+          <h1>All rights reserved to the developer</h1>
+        </footer>
       </body>
     </html>
   );
